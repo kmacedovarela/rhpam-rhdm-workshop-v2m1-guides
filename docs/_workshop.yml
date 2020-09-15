@@ -1,0 +1,29 @@
+---
+id: "rhpam_rhdm"
+name: "RHPAM / RHDM Workshop - Module 1 (Sep 2020)"
+
+
+vars:
+  OPENSHIFT_DOCS_BASE: "https://docs.openshift.com/container-platform/4.2/welcome/index.html"
+  DOWNLOAD_CLIENT: https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.2/
+  REMOTE_DEBUGGER_JDB: true
+  REMOTE_DEBUGGER_JBDS: true
+  REMOTE_DEBUGGER_IDEA: true
+  OPENSHIFT_CONSOLE_URL: OPENSHIFT-CONSOLE-URL
+  #ECLIPSE_CHE_URL: "http://che-lab-infra.192.168.99.100.nip.io"
+  #GIT_URL: "http://gogs-lab-infra.192.168.99.100.nip.io"
+  NEXUS_URL: "http://nexus.lab-infra.svc:8081/repository/maven-all-public"
+  OPENSHIFT_USER: userNN
+  OPENSHIFT_PASWORD: passNN
+
+modules:
+  activate:
+  - intro
+  - use-case-overview
+  - components-overview
+  - cloud-installation
+  # - cloud-installation-continued. # Removed. More time can be spent on PAM features; An operator lab can be added later.
+  #- verifying-installation
+  - accessing-pam
+  - authentication-authorization
+  - finish
